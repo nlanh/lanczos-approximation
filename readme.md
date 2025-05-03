@@ -30,6 +30,9 @@ Make sure you have the Intel Fortran compiler (`ifx`) and Intel MKL installed.
 To compile the code, use:
 
     ifx -qmkl -o lanczos_method lanczos_method.f90
+
+or
+
     gfortran -o lanczos_method lanczos_method.f90 -llapack
 
 If required, source the Intel environment setup:
