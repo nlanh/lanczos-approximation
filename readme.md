@@ -59,7 +59,7 @@ The program performs the following steps:
 
 Dependencies
 ------------
-- Intel Fortran compiler (`ifx`)
+- Intel Fortran compiler (`ifx`) or gfortran compiler
 - Intel Math Kernel Library (MKL), for LAPACK routines `dsyev` and `dsteqr`
 
 Output

@@ -1,5 +1,5 @@
 program lanczos_method
-!ifx: source /opt/intel/oneapi/setvars.sh intel64
+!Compile: gfortran -o lanczos_method lanczos_method.f90 -llapack
 !Compile: ifx -qmkl -o lanczos_method lanczos_method.f90
   implicit none
   integer, parameter :: dp = kind(1.0d0)
