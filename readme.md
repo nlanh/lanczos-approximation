@@ -16,13 +16,6 @@ Input
 - `matrix.dat`: A file containing the symmetric matrix A of size nxn.
   Format: each row of the matrix on a new line, with n space-separated values.
 
-  > **Note**: In this code, both `n` (matrix size) and `m` (number of Lanczos steps) 
-  > are declared as parameters:
-  >
-  > ```fortran
-  > integer, parameter :: n = 5, m = 5
-  > ```
-
 Compilation
 -----------
 Make sure you have the Intel Fortran compiler (`ifx`) and Intel MKL installed.
@@ -49,7 +42,7 @@ The program performs the following steps:
 -----------------------------------------
 1. Reads a symmetric nxn matrix A from `matrix.dat`.
 2. Initializes a random normalized starting vector `v0`.
-3. Runs the Lanczos iteration for `m=5` steps, producing vectors `V` and scalars `alpha`, `beta`.
+3. Runs the Lanczos iteration for `m` steps, producing vectors `V` and scalars `alpha`, `beta`.
 4. Constructs the tridiagonal matrix `T` from `alpha` and `beta`.
 5. Computes:
     - The exact eigenvalues of A using LAPACK's `dsyev`.
